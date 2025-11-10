@@ -2,6 +2,12 @@ var timer = 60;
 var score = 0;
 var hitvalue = 0;
 var maxscore = 0;
+
+const clickSound = new Audio('/mouse_click.mp3');
+
+clickSound.preload = 'auto';
+
+
 function makebox(){
     var cluster = "";
 
@@ -44,12 +50,14 @@ document.querySelector("#pbtm").addEventListener("click",(bub)=>{
 
     // if(!clickednum.classList.contains("bubble")) return;
 
-    // console.log(val.textContent);
+    
+    const sound = clickSound.cloneNode(); // create a copy of the sound
+    sound.play().catch(err => console.log('Audio play blocked:', err));
     if(clickednum === hitvalue){
         scorecal();
         makebox();
         hitval();
-    }
+    } 
     
     if(timer==0){
         document.querySelector("#scoreval").textContent = 0;
