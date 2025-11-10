@@ -34,12 +34,4 @@ Option 2 — quick HTTP server (recommended for consistent behavior)
 - script.js — game logic (timer, bubble generation, scoring)
 - README.md — this file
 
-## Development notes / TODO
-- Guard clicks after timer reaches 0 (already handled in script but verify).
-- Use data attributes for bubble values for more reliable parsing.
-- Persist high score (localStorage).
-- Add animations/sound for feedback.
-- Improve responsive layout and accessibility.
 
-## License
-MIT — modify as needed.
