@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Gilroy";
+}
+html,body{
+    width: 100%;
+    height:100%;
+}
+
+#main{
+    width: 100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(155, 184, 155);
+}
+#pannel{
+    overflow: hidden;
+    width: 80%;
+    height:80%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+#ptop{
+    padding: 0px 5%; 
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    width:90%;
+    height:80px;
+    background-color: rgb(72, 104, 72);
+}
+
+.element{
+    display: flex;
+    /* width: 15%; */
+    align-items: center;
+    gap:20%;
+
+}
+.box{
+    color: rgb(18,119,57);
+    font-weight: 600;
+    font-size: 25px;
+    padding:10px 20px;  
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#pbtm{
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+    padding: 10px;
+    width:100%;
+    height: calc(100% - 100px);
+
+}
+.bubble{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height:40px;
+    color: #fff;
+    background-color: rgb(72,104,72);
+    border-radius: 50px;
+}
+.bubble:hover{
+    cursor: pointer;
+    background-color: rgb(35, 57, 35);
+}
+.scoredis{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: rgb(18,119,57);
+    background-color: rgba(255,255,255,0.95);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+}
+.scoredis p{
+    margin: 0;
+}
