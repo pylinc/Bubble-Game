@@ -1,4 +1,4 @@
-var timer = 10;
+var timer = 60;
 var score = 0;
 var hitvalue = 0;
 var maxscore = 0;
@@ -22,9 +22,9 @@ function settimer(){
             clearInterval(timerin); 
             document.querySelector("#pbtm").innerHTML = `<p class = 'scoredis'>Your Score: ${score} </p> `;
             // document.querySelector(".scoredis").innerHTML = `<p> Your Score: ${score}</p>`
-            if(score>maxscore){
+            // if(score>maxscore){
                 
-            }
+            // }
         }
     },1000);
 }
